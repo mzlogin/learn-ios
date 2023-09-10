@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="292" y="-844"/>
         </scene>
-        <!--Item 2-->
+        <!--Second-->
         <scene sceneID="lO2-09-ugh">
             <objects>
                 <viewController id="tpa-1B-GeS" sceneMemberID="viewController">
@@ -36,23 +36,31 @@
                         <viewLayoutGuide key="safeArea" id="bBN-Vs-sYe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="NiP-Ro-6WN"/>
+                    <tabBarItem key="tabBarItem" title="Second" id="NiP-Ro-6WN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWd-s8-fXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679" y="-38"/>
         </scene>
-        <!--Item 1-->
+        <!--First-->
         <scene sceneID="2bH-2I-pZU">
             <objects>
                 <viewController id="rSe-7t-7b0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="leC-S5-8xI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZQ-Km-NTf">
+                                <rect key="frame" x="168" y="279" width="57" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Test"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WMn-TP-BA4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="0uw-ky-IYk"/>
+                    <tabBarItem key="tabBarItem" title="First" id="0uw-ky-IYk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgd-Sp-odN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
