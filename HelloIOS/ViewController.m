@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <UITextFieldDelegate, UITextViewDelegate>
+@interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *helloLabel;
 @property (weak, nonatomic) IBOutlet UITextField *bookNameTextField;
@@ -27,7 +27,7 @@
 - (IBAction)onClick:(id)sender {
     self.bookName = self.bookNameTextField.text;
     NSString *nameString = self.bookName;
-    if ([nameString length] == 0) {
+    if (nameString != nil && [nameString length] == 0) {
         nameString = @"World";
     }
     NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
