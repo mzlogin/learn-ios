@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D9D3FC862BA926C60003869A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC852BA926C60003869A /* main.m */; };
-		D9D3FC8E2BA9382A0003869A /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC8D2BA9382A0003869A /* Animal.m */; };
+		D9D3FC8E2BA9382A0003869A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC8D2BA9382A0003869A /* Person.m */; };
+		D9D3FC912BAA927A0003869A /* Person+NewFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC902BAA927A0003869A /* Person+NewFunction.m */; };
+		D9D3FC942BAA93E20003869A /* Children.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC932BAA93E20003869A /* Children.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +28,12 @@
 /* Begin PBXFileReference section */
 		D9D3FC822BA926C60003869A /* OcDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OcDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D3FC852BA926C60003869A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D9D3FC8C2BA9382A0003869A /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
-		D9D3FC8D2BA9382A0003869A /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		D9D3FC8C2BA9382A0003869A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D9D3FC8D2BA9382A0003869A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D9D3FC8F2BAA927A0003869A /* Person+NewFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+NewFunction.h"; sourceTree = "<group>"; };
+		D9D3FC902BAA927A0003869A /* Person+NewFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+NewFunction.m"; sourceTree = "<group>"; };
+		D9D3FC922BAA93E20003869A /* Children.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Children.h; sourceTree = "<group>"; };
+		D9D3FC932BAA93E20003869A /* Children.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Children.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				D9D3FC852BA926C60003869A /* main.m */,
-				D9D3FC8C2BA9382A0003869A /* Animal.h */,
-				D9D3FC8D2BA9382A0003869A /* Animal.m */,
+				D9D3FC8C2BA9382A0003869A /* Person.h */,
+				D9D3FC8D2BA9382A0003869A /* Person.m */,
+				D9D3FC8F2BAA927A0003869A /* Person+NewFunction.h */,
+				D9D3FC902BAA927A0003869A /* Person+NewFunction.m */,
+				D9D3FC922BAA93E20003869A /* Children.h */,
+				D9D3FC932BAA93E20003869A /* Children.m */,
 			);
 			path = OcDemo;
 			sourceTree = "<group>";
@@ -125,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D3FC862BA926C60003869A /* main.m in Sources */,
-				D9D3FC8E2BA9382A0003869A /* Animal.m in Sources */,
+				D9D3FC8E2BA9382A0003869A /* Person.m in Sources */,
+				D9D3FC942BAA93E20003869A /* Children.m in Sources */,
+				D9D3FC912BAA927A0003869A /* Person+NewFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

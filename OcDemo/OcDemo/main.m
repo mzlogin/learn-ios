@@ -6,29 +6,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Animal.h"
-
-@interface Student : NSObject
-@property NSString *name;
-@property int age;
-@property float score;
--(void)display;
-@end
-
-@implementation Student
--(void)display {
-    NSLog(@"%@ 的年龄是 %d, 成绩是 %f", self.name, self.age, self.score);
-}
-@end
+#import "Person.h"
+#import "Person+NewFunction.h"
 
 int main(int argc, const char * argv[]) {
-    Student *stu1 = [[Student alloc] init];
-    stu1.name = @"小明";
-    stu1.age = 15;
-    stu1.score = 92.5;
-    [stu1 display];
+    Person *p1 = [[Person alloc] init];
+    p1.name = @"Jack";
+    [p1 show];
+//    [p1 display];
+    [p1 setName:@"Ma"];
+    [p1 show];
     
-    Animal *ani1 = [[Animal alloc] init];
-    [ani1 show];
+    id p2 = [[Person alloc] init];
+    [p2 setName:@"id"];
+    [p2 show];
+    [p2 eat];
     return 0;
 }
