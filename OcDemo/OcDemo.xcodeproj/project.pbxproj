@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D922A6102BC24C43009851FB /* Nanny.m in Sources */ = {isa = PBXBuildFile; fileRef = D922A60F2BC24C43009851FB /* Nanny.m */; };
+		D922A6132BCE1F6F009851FB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = D922A6122BCE1F6F009851FB /* Car.m */; };
+		D99175C02BCF76E5002EF2A6 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = D99175BF2BCF76E5002EF2A6 /* Worker.m */; };
 		D9D3FC862BA926C60003869A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC852BA926C60003869A /* main.m */; };
 		D9D3FC8E2BA9382A0003869A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC8D2BA9382A0003869A /* Person.m */; };
 		D9D3FC912BAA927A0003869A /* Person+NewFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC902BAA927A0003869A /* Person+NewFunction.m */; };
@@ -26,6 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D922A60E2BC24C43009851FB /* Nanny.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nanny.h; sourceTree = "<group>"; };
+		D922A60F2BC24C43009851FB /* Nanny.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nanny.m; sourceTree = "<group>"; };
+		D922A6112BCE1F6F009851FB /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		D922A6122BCE1F6F009851FB /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		D99175BE2BCF76E5002EF2A6 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		D99175BF2BCF76E5002EF2A6 /* Worker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
 		D9D3FC822BA926C60003869A /* OcDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OcDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D3FC852BA926C60003869A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9D3FC8C2BA9382A0003869A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -73,6 +82,12 @@
 				D9D3FC902BAA927A0003869A /* Person+NewFunction.m */,
 				D9D3FC922BAA93E20003869A /* Children.h */,
 				D9D3FC932BAA93E20003869A /* Children.m */,
+				D922A60E2BC24C43009851FB /* Nanny.h */,
+				D922A60F2BC24C43009851FB /* Nanny.m */,
+				D922A6112BCE1F6F009851FB /* Car.h */,
+				D922A6122BCE1F6F009851FB /* Car.m */,
+				D99175BE2BCF76E5002EF2A6 /* Worker.h */,
+				D99175BF2BCF76E5002EF2A6 /* Worker.m */,
 			);
 			path = OcDemo;
 			sourceTree = "<group>";
@@ -134,10 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D922A6132BCE1F6F009851FB /* Car.m in Sources */,
+				D99175C02BCF76E5002EF2A6 /* Worker.m in Sources */,
 				D9D3FC862BA926C60003869A /* main.m in Sources */,
 				D9D3FC8E2BA9382A0003869A /* Person.m in Sources */,
 				D9D3FC942BAA93E20003869A /* Children.m in Sources */,
 				D9D3FC912BAA927A0003869A /* Person+NewFunction.m in Sources */,
+				D922A6102BC24C43009851FB /* Nanny.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
