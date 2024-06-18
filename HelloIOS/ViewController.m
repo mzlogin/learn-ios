@@ -23,6 +23,29 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)keyboardDidShow: (NSNotification *)notif {
+    NSLog(@"键盘打开");
+}
+
+-(void)keyboardDidHide: (NSNotification *)notif {
+    NSLog(@"键盘关闭");
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    // 注册键盘出现的通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
+    // 注册键盘隐藏通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    // 解除键盘出现通知
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIKeyboardDidShowNotification object:nil];
+    // 解除键盘隐藏通知
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+    [super viewWillDisappear:animated];
+}
 
 - (IBAction)onClick:(id)sender {
     self.bookName = self.bookNameTextField.text;
