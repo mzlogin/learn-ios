@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93C86BD2C213DFA0092B7E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86BC2C213DFA0092B7E9 /* AppDelegate.m */; };
+		D93C86C02C213DFA0092B7E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86BF2C213DFA0092B7E9 /* SceneDelegate.m */; };
+		D93C86C32C213DFA0092B7E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86C22C213DFA0092B7E9 /* ViewController.m */; };
+		D93C86C62C213DFA0092B7E9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D93C86C52C213DFA0092B7E9 /* Base */; };
+		D93C86C82C213DFB0092B7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93C86C72C213DFB0092B7E9 /* Assets.xcassets */; };
+		D93C86CB2C213DFB0092B7E9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D93C86CA2C213DFB0092B7E9 /* Base */; };
+		D93C86CE2C213DFB0092B7E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86CD2C213DFB0092B7E9 /* main.m */; };
 		D9731B592AA4293600978063 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9731B582AA4293600978063 /* AppDelegate.m */; };
 		D9731B5C2AA4293600978063 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9731B5B2AA4293600978063 /* SceneDelegate.m */; };
 		D9731B5F2AA4293600978063 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9731B5E2AA4293600978063 /* ViewController.m */; };
@@ -50,6 +57,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D93C86B92C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchSliderSegmentedControlSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93C86BB2C213DFA0092B7E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D93C86BC2C213DFA0092B7E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D93C86BE2C213DFA0092B7E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D93C86BF2C213DFA0092B7E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D93C86C12C213DFA0092B7E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D93C86C22C213DFA0092B7E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D93C86C52C213DFA0092B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D93C86C72C213DFB0092B7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D93C86CA2C213DFB0092B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D93C86CC2C213DFB0092B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93C86CD2C213DFB0092B7E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9731B542AA4293600978063 /* HelloIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9731B572AA4293600978063 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9731B582AA4293600978063 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +111,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D93C86B62C213DFA0092B7E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9731B512AA4293600978063 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +156,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D93C86BA2C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample */ = {
+			isa = PBXGroup;
+			children = (
+				D93C86BB2C213DFA0092B7E9 /* AppDelegate.h */,
+				D93C86BC2C213DFA0092B7E9 /* AppDelegate.m */,
+				D93C86BE2C213DFA0092B7E9 /* SceneDelegate.h */,
+				D93C86BF2C213DFA0092B7E9 /* SceneDelegate.m */,
+				D93C86C12C213DFA0092B7E9 /* ViewController.h */,
+				D93C86C22C213DFA0092B7E9 /* ViewController.m */,
+				D93C86C42C213DFA0092B7E9 /* Main.storyboard */,
+				D93C86C72C213DFB0092B7E9 /* Assets.xcassets */,
+				D93C86C92C213DFB0092B7E9 /* LaunchScreen.storyboard */,
+				D93C86CC2C213DFB0092B7E9 /* Info.plist */,
+				D93C86CD2C213DFB0092B7E9 /* main.m */,
+			);
+			path = SwitchSliderSegmentedControlSample;
+			sourceTree = "<group>";
+		};
 		D9731B4B2AA4293600978063 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +182,7 @@
 				D9731B7C2AA4293700978063 /* HelloIOSUITests */,
 				D9731B912AA46FC900978063 /* TestTarget */,
 				D9C284C92AADE500000ACD04 /* XibTest */,
+				D93C86BA2C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample */,
 				D9731B552AA4293600978063 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +195,7 @@
 				D9731B792AA4293700978063 /* HelloIOSUITests.xctest */,
 				D9731B902AA46FC900978063 /* TestTarget.app */,
 				D9C284C82AADE500000ACD04 /* XibTest.app */,
+				D93C86B92C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +272,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D93C86B82C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93C86D12C213DFB0092B7E9 /* Build configuration list for PBXNativeTarget "SwitchSliderSegmentedControlSample" */;
+			buildPhases = (
+				D93C86B52C213DFA0092B7E9 /* Sources */,
+				D93C86B62C213DFA0092B7E9 /* Frameworks */,
+				D93C86B72C213DFA0092B7E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchSliderSegmentedControlSample;
+			productName = SwitchSliderSegmentedControlSample;
+			productReference = D93C86B92C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D9731B532AA4293600978063 /* HelloIOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9731B832AA4293700978063 /* Build configuration list for PBXNativeTarget "HelloIOS" */;
@@ -322,6 +385,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					D93C86B82C213DFA0092B7E9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					D9731B532AA4293600978063 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -359,11 +425,22 @@
 				D9731B782AA4293700978063 /* HelloIOSUITests */,
 				D9731B8F2AA46FC900978063 /* TestTarget */,
 				D9C284C72AADE500000ACD04 /* XibTest */,
+				D93C86B82C213DFA0092B7E9 /* SwitchSliderSegmentedControlSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D93C86B72C213DFA0092B7E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C86C82C213DFB0092B7E9 /* Assets.xcassets in Resources */,
+				D93C86CB2C213DFB0092B7E9 /* Base in Resources */,
+				D93C86C62C213DFA0092B7E9 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9731B522AA4293600978063 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +488,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D93C86B52C213DFA0092B7E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C86C32C213DFA0092B7E9 /* ViewController.m in Sources */,
+				D93C86BD2C213DFA0092B7E9 /* AppDelegate.m in Sources */,
+				D93C86CE2C213DFB0092B7E9 /* main.m in Sources */,
+				D93C86C02C213DFA0092B7E9 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9731B502AA4293600978063 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +564,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D93C86C42C213DFA0092B7E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93C86C52C213DFA0092B7E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D93C86C92C213DFB0092B7E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93C86CA2C213DFB0092B7E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		D9731B602AA4293600978063 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -519,6 +623,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D93C86CF2C213DFB0092B7E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwitchSliderSegmentedControlSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mazhuang.SwitchSliderSegmentedControlSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D93C86D02C213DFB0092B7E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwitchSliderSegmentedControlSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mazhuang.SwitchSliderSegmentedControlSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D9731B812AA4293700978063 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -854,6 +1020,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D93C86D12C213DFB0092B7E9 /* Build configuration list for PBXNativeTarget "SwitchSliderSegmentedControlSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93C86CF2C213DFB0092B7E9 /* Debug */,
+				D93C86D02C213DFB0092B7E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D9731B4F2AA4293600978063 /* Build configuration list for PBXProject "HelloIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
