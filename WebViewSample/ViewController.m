@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 
-@interface ViewController ()
+@interface ViewController ()<WKNavigationDelegate>
 @property (weak, nonatomic) IBOutlet WKWebView *webView;
 
 @end
@@ -39,6 +39,26 @@
     }
 }
 - (IBAction)loadRequest:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"https://mazhuang.org"];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
+    self.webView.navigationDelegate = self;
+}
+
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    NSLog(@"开始加载");
+}
+
+- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation {
+    NSLog(@"内容开始返回");
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    NSLog(@"加载完成");
+}
+
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error {
+    NSLog(@"加载失败 error : %@", error.description);
 }
 
 @end
