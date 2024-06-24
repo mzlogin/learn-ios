@@ -1,15 +1,16 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  HelloIOS
 //
-//  Created by 马壮 on 2023/9/3.
+//  Created by 马壮 on 2024/6/24.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (copy, nonatomic) NSString *bookName;
+@interface ViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

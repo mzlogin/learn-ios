@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
-    self.window.rootViewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    self.window.rootViewController = [[ViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
     [self.window makeKeyWindow];
     
     return YES;

@@ -5,13 +5,13 @@
 //  Created by 马壮 on 2023/9/10.
 //
 
-#import "RootViewController.h"
+#import "ViewController.h"
 
-@interface RootViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation RootViewController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,5 +27,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)gotoLabelAndTextFieldTest:(id)sender {
+}
+- (IBAction)gotoLabelAndTextFieldTest:(id)sender {
+}
+- (IBAction)gotoLabelAndTextFieldTest:(id)sender {
+}
 
 @end

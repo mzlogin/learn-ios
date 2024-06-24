@@ -5,15 +5,15 @@
 //  Created by 马壮 on 2024/6/19.
 //
 
-#import "ViewController.h"
+#import "WebViewTestViewController.h"
 #import <WebKit/WebKit.h>
 
-@interface ViewController ()<WKNavigationDelegate>
+@interface WebViewTestViewController ()<WKNavigationDelegate>
 @property (weak, nonatomic) IBOutlet WKWebView *webView;
 
 @end
 
-@implementation ViewController
+@implementation WebViewTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,6 +21,7 @@
 }
 - (IBAction)loadHtmlString:(id)sender {
     NSString *htmlPath = [[NSBundle mainBundle]pathForResource:@"index" ofType:@"html"];
+    NSLog(@"%@", htmlPath);
     NSURL *bundleUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
     NSError *error = nil;
     NSString *html = [[NSString alloc]initWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:&error];

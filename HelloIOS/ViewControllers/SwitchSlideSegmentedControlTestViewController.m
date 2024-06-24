@@ -5,16 +5,16 @@
 //  Created by 马壮 on 2024/6/18.
 //
 
-#import "ViewController.h"
+#import "SwitchSlideSegmentedControlTestViewController.h"
 
-@interface ViewController ()
+@interface SwitchSlideSegmentedControlTestViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *rightSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *sliderValue;
 
 @end
 
-@implementation ViewController
+@implementation SwitchSlideSegmentedControlTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
