@@ -14,6 +14,7 @@
 		D9731B642AA4293700978063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9731B632AA4293700978063 /* Assets.xcassets */; };
 		D9731B672AA4293700978063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9731B652AA4293700978063 /* LaunchScreen.storyboard */; };
 		D9731B6A2AA4293700978063 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9731B692AA4293700978063 /* main.m */; };
+		D974CCA62C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D974CCA52C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.m */; };
 		D9B8EEC02C29257F005C8710 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B8EEBF2C29257F005C8710 /* ViewController.m */; };
 		D9B8EEC22C2959E7005C8710 /* SwitchSlideSegmentedControlTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86C22C213DFA0092B7E9 /* SwitchSlideSegmentedControlTestViewController.m */; };
 		D9B8EEC32C295B2B005C8710 /* WebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86DF2C228BDD0092B7E9 /* WebViewTestViewController.m */; };
@@ -45,6 +46,8 @@
 		D9731B662AA4293700978063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9731B682AA4293700978063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9731B692AA4293700978063 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D974CCA42C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertActionSheetTestViewController.h; sourceTree = "<group>"; };
+		D974CCA52C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertActionSheetTestViewController.m; sourceTree = "<group>"; };
 		D9B8EEBE2C29257F005C8710 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D9B8EEBF2C29257F005C8710 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D9C284C82AADE500000ACD04 /* XibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +129,8 @@
 				D93C86C22C213DFA0092B7E9 /* SwitchSlideSegmentedControlTestViewController.m */,
 				D93C86DE2C228BDD0092B7E9 /* WebViewTestViewController.h */,
 				D93C86DF2C228BDD0092B7E9 /* WebViewTestViewController.m */,
+				D974CCA42C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.h */,
+				D974CCA52C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				D9731B592AA4293600978063 /* AppDelegate.m in Sources */,
 				D9731B6A2AA4293700978063 /* main.m in Sources */,
 				D9B8EEC32C295B2B005C8710 /* WebViewTestViewController.m in Sources */,
+				D974CCA62C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.m in Sources */,
 				D9731B5C2AA4293600978063 /* SceneDelegate.m in Sources */,
 				D9B8EEC02C29257F005C8710 /* ViewController.m in Sources */,
 			);

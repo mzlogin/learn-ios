@@ -44,6 +44,15 @@
                                     <segue destination="weJ-mU-f6F" kind="show" id="wQ4-WR-XnP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-CQ-Kex">
+                                <rect key="frame" x="101" y="284" width="194" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alert ActionSheet Test"/>
+                                <connections>
+                                    <segue destination="P7M-jo-zNg" kind="show" id="xVh-3s-S9t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SC6-c5-0jb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -270,6 +279,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6R-aS-LE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2703" y="665"/>
+        </scene>
+        <!--Alert Action Sheet Test View Controller-->
+        <scene sceneID="Xuk-Lz-2zw">
+            <objects>
+                <viewController id="P7M-jo-zNg" customClass="AlertActionSheetTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CSs-RT-qSi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iqh-hE-0IO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2SI-UJ-NA0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69H-6d-TgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3389" y="-775"/>
         </scene>
     </scenes>
     <resources>
