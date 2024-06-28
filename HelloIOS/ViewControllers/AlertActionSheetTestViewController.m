@@ -43,6 +43,8 @@
     [buttonActionSheet addTarget:self action:@selector(testActionSheet:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:buttonActionSheet];
+    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)testAlertView:(id)sender {

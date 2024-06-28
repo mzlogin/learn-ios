@@ -22,42 +22,43 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Label and TextField Test"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="02b-Xz-f33"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx2-lL-ltH">
                                 <rect key="frame" x="43" y="181" width="308" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Switch Slider SegmentedControl Test"/>
-                                <connections>
-                                    <segue destination="HAZ-hh-0pG" kind="show" id="zdO-1v-pkX"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWq-yS-OEN">
                                 <rect key="frame" x="131" y="236" width="131" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="WebView Test"/>
-                                <connections>
-                                    <segue destination="weJ-mU-f6F" kind="show" id="wQ4-WR-XnP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-CQ-Kex">
                                 <rect key="frame" x="101" y="284" width="194" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Alert ActionSheet Test"/>
-                                <connections>
-                                    <segue destination="P7M-jo-zNg" kind="show" id="xVh-3s-S9t"/>
-                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGY-Lf-skM">
+                                <rect key="frame" x="69" y="335" width="256" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ActivityIndicator Progress Test"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SC6-c5-0jb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ALd-6w-tkY"/>
+                    <connections>
+                        <outlet property="activeIndicatorProgressTestButton" destination="wGY-Lf-skM" id="QxL-sk-Urt"/>
+                        <outlet property="alertActionSheetTestButton" destination="JzX-CQ-Kex" id="61q-LV-jRM"/>
+                        <outlet property="labelAndTextFieldTestButton" destination="Cpa-Gt-lzg" id="vgM-z3-v3s"/>
+                        <outlet property="switchSlideSegmentedControlTestButton" destination="Sx2-lL-ltH" id="jub-ly-ukl"/>
+                        <outlet property="webViewTestButton" destination="pWq-yS-OEN" id="Ypd-Z6-UAn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urm-zx-bbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +67,7 @@
         <!--Label And Text Field Test View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LabelAndTextFieldTestViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LabelAndTextFieldTest" id="BYZ-38-t0r" customClass="LabelAndTextFieldTestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3390" y="-78"/>
+            <point key="canvasLocation" x="2015" y="665"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hoI-SS-ax2">
@@ -157,7 +158,7 @@
         <!--Switch Slide Segmented Control Test View Controller-->
         <scene sceneID="Pze-Ap-Jd9">
             <objects>
-                <viewController id="HAZ-hh-0pG" customClass="SwitchSlideSegmentedControlTestViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwitchSlideSegmentedControlTest" id="HAZ-hh-0pG" customClass="SwitchSlideSegmentedControlTestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AEx-cx-Mcr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +227,7 @@
         <!--Web View Test View Controller-->
         <scene sceneID="WfI-4Z-tCj">
             <objects>
-                <viewController id="weJ-mU-f6F" customClass="WebViewTestViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewTest" id="weJ-mU-f6F" customClass="WebViewTestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nwJ-bz-C8w">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,22 +280,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6R-aS-LE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2703" y="665"/>
-        </scene>
-        <!--Alert Action Sheet Test View Controller-->
-        <scene sceneID="Xuk-Lz-2zw">
-            <objects>
-                <viewController id="P7M-jo-zNg" customClass="AlertActionSheetTestViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CSs-RT-qSi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="iqh-hE-0IO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="2SI-UJ-NA0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="69H-6d-TgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3389" y="-775"/>
         </scene>
     </scenes>
     <resources>

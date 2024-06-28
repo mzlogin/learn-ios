@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 - (IBAction)loadHtmlString:(id)sender {
     NSString *htmlPath = [[NSBundle mainBundle]pathForResource:@"index" ofType:@"html"];
