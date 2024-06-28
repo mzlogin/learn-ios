@@ -11,6 +11,8 @@
 #import "ViewControllers/WebViewTestViewController.h"
 #import "ViewControllers/AlertActionSheetTestViewController.h"
 #import "ViewControllers/ActivityIndicatorProgressViewController.h"
+#import "ViewControllers/ToolbarTestViewController.h"
+#import "ViewControllers/NavigationBarTestViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *labelAndTextFieldTestButton;
@@ -18,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *webViewTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *alertActionSheetTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *activeIndicatorProgressTestButton;
+@property (weak, nonatomic) IBOutlet UIButton *toolbarTestButton;
+@property (weak, nonatomic) IBOutlet UIButton *navigationBarTestButton;
 
 @end
 
@@ -28,11 +32,17 @@
 
     self.title = @"HelloIOS";
     
-    [self.labelAndTextFieldTestButton addTarget:self action:@selector(openViewController:) forControlEvents:UIControlEventTouchUpInside];
-    [self.switchSlideSegmentedControlTestButton addTarget:self action:@selector(openViewController:) forControlEvents:UIControlEventTouchUpInside];
-    [self.webViewTestButton addTarget:self action:@selector(openViewController:) forControlEvents:UIControlEventTouchUpInside];
-    [self.alertActionSheetTestButton addTarget:self action:@selector(openViewController:) forControlEvents:UIControlEventTouchUpInside];
-    [self.activeIndicatorProgressTestButton addTarget:self action:@selector(openViewController:) forControlEvents:UIControlEventTouchUpInside];
+    [self addDefaultAction:self.labelAndTextFieldTestButton];
+    [self addDefaultAction:self.switchSlideSegmentedControlTestButton];
+    [self addDefaultAction:self.webViewTestButton];
+    [self addDefaultAction:self.alertActionSheetTestButton];
+    [self addDefaultAction:self.activeIndicatorProgressTestButton];
+    [self addDefaultAction:self.toolbarTestButton];
+    [self addDefaultAction:self.navigationBarTestButton];
+}
+
+- (void)addDefaultAction:(UIButton*) button {
+    [button addTarget:self action:@selector(openViewController:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)openViewController:(id)sender {
@@ -49,8 +59,12 @@
         controller = [[AlertActionSheetTestViewController alloc] init];
     } else if ([sender isEqual:self.activeIndicatorProgressTestButton]) {
         controller = [[ActivityIndicatorProgressViewController alloc] init];
+    } else if ([sender isEqual:self.toolbarTestButton]) {
+        controller = [[ToolbarTestViewController alloc] init];
+    } else if ([sender isEqual:self.navigationBarTestButton]) {
+        controller = [[NavigationBarTestViewController alloc] init];
     }
-    
+
     if (controller != nil) {
         [self.navigationController pushViewController:controller animated:YES];
     }
