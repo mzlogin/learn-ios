@@ -11,6 +11,7 @@
 #import "Children.h"
 #import "Nanny.h"
 #import "Worker.h"
+#import "NSDate+NewFunction.h"
 
 int main(int argc, const char * argv[]) {
     Person *p1 = [[Person alloc] init];
@@ -164,5 +165,10 @@ int main(int argc, const char * argv[]) {
     NSString * libraryPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
     NSLog(@"libraryPath: %@", libraryPath);
     
+    // date test
+    NSDate* date1 = [NSDate dateFromStr:@"2024-06-29 11:36:01"];
+    NSDate* date2 = [NSDate dateFromStr:@"2024-06-29 13:36:01"];
+    NSLog(@"date1: %@, date2: %@", date1, date2);
+
     return 0;
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D922A6102BC24C43009851FB /* Nanny.m in Sources */ = {isa = PBXBuildFile; fileRef = D922A60F2BC24C43009851FB /* Nanny.m */; };
 		D922A6132BCE1F6F009851FB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = D922A6122BCE1F6F009851FB /* Car.m */; };
+		D9770FBF2C2FBCA000EBD6B0 /* NSDate+NewFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D9770FBE2C2FBCA000EBD6B0 /* NSDate+NewFunction.m */; };
 		D99175C02BCF76E5002EF2A6 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = D99175BF2BCF76E5002EF2A6 /* Worker.m */; };
 		D9D3FC862BA926C60003869A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC852BA926C60003869A /* main.m */; };
 		D9D3FC8E2BA9382A0003869A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D3FC8D2BA9382A0003869A /* Person.m */; };
@@ -33,6 +34,8 @@
 		D922A60F2BC24C43009851FB /* Nanny.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nanny.m; sourceTree = "<group>"; };
 		D922A6112BCE1F6F009851FB /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		D922A6122BCE1F6F009851FB /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		D9770FBD2C2FBCA000EBD6B0 /* NSDate+NewFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+NewFunction.h"; sourceTree = "<group>"; };
+		D9770FBE2C2FBCA000EBD6B0 /* NSDate+NewFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NewFunction.m"; sourceTree = "<group>"; };
 		D99175BE2BCF76E5002EF2A6 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		D99175BF2BCF76E5002EF2A6 /* Worker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
 		D9D3FC822BA926C60003869A /* OcDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OcDemo; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,8 @@
 				D922A6122BCE1F6F009851FB /* Car.m */,
 				D99175BE2BCF76E5002EF2A6 /* Worker.h */,
 				D99175BF2BCF76E5002EF2A6 /* Worker.m */,
+				D9770FBD2C2FBCA000EBD6B0 /* NSDate+NewFunction.h */,
+				D9770FBE2C2FBCA000EBD6B0 /* NSDate+NewFunction.m */,
 			);
 			path = OcDemo;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D922A6132BCE1F6F009851FB /* Car.m in Sources */,
+				D9770FBF2C2FBCA000EBD6B0 /* NSDate+NewFunction.m in Sources */,
 				D99175C02BCF76E5002EF2A6 /* Worker.m in Sources */,
 				D9D3FC862BA926C60003869A /* main.m in Sources */,
 				D9D3FC8E2BA9382A0003869A /* Person.m in Sources */,
