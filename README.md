@@ -9,3 +9,14 @@
 ## 电子书
 
 - 《Objective-C 基础教程》
+
+## 逆向工程
+
+### 内容
+
+- [Exploring macOS private frameworks](https://www.jviotti.com/2023/11/20/exploring-macos-private-frameworks.html)
+
+### 工具
+
+- Hopper Disassembler
+- [RuntimeBrowser](https://github.com/nst/RuntimeBrowser)
