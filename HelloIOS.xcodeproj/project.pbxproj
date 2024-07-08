@@ -18,6 +18,7 @@
 		D974CCA92C2BCA4E00E4B9CC /* ActivityIndicatorProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D974CCA82C2BCA4E00E4B9CC /* ActivityIndicatorProgressViewController.m */; };
 		D974CCAC2C2E637E00E4B9CC /* ToolbarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D974CCAB2C2E637E00E4B9CC /* ToolbarTestViewController.m */; };
 		D974CCAF2C2E692900E4B9CC /* NavigationBarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D974CCAE2C2E692900E4B9CC /* NavigationBarTestViewController.m */; };
+		D9B471B32C3B91C200255731 /* DatePickerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B471B22C3B91C200255731 /* DatePickerTestViewController.m */; };
 		D9B8EEC02C29257F005C8710 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B8EEBF2C29257F005C8710 /* ViewController.m */; };
 		D9B8EEC22C2959E7005C8710 /* SwitchSlideSegmentedControlTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86C22C213DFA0092B7E9 /* SwitchSlideSegmentedControlTestViewController.m */; };
 		D9B8EEC32C295B2B005C8710 /* WebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86DF2C228BDD0092B7E9 /* WebViewTestViewController.m */; };
@@ -57,6 +58,8 @@
 		D974CCAB2C2E637E00E4B9CC /* ToolbarTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolbarTestViewController.m; sourceTree = "<group>"; };
 		D974CCAD2C2E692900E4B9CC /* NavigationBarTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarTestViewController.h; sourceTree = "<group>"; };
 		D974CCAE2C2E692900E4B9CC /* NavigationBarTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarTestViewController.m; sourceTree = "<group>"; };
+		D9B471B12C3B91C200255731 /* DatePickerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerTestViewController.h; sourceTree = "<group>"; };
+		D9B471B22C3B91C200255731 /* DatePickerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerTestViewController.m; sourceTree = "<group>"; };
 		D9B8EEBE2C29257F005C8710 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D9B8EEBF2C29257F005C8710 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D9C284C82AADE500000ACD04 /* XibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +149,8 @@
 				D974CCAB2C2E637E00E4B9CC /* ToolbarTestViewController.m */,
 				D974CCAD2C2E692900E4B9CC /* NavigationBarTestViewController.h */,
 				D974CCAE2C2E692900E4B9CC /* NavigationBarTestViewController.m */,
+				D9B471B12C3B91C200255731 /* DatePickerTestViewController.h */,
+				D9B471B22C3B91C200255731 /* DatePickerTestViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				D9B8EEC22C2959E7005C8710 /* SwitchSlideSegmentedControlTestViewController.m in Sources */,
 				D9731B5F2AA4293600978063 /* LabelAndTextFieldTestViewController.m in Sources */,
 				D9731B592AA4293600978063 /* AppDelegate.m in Sources */,
+				D9B471B32C3B91C200255731 /* DatePickerTestViewController.m in Sources */,
 				D9731B6A2AA4293700978063 /* main.m in Sources */,
 				D974CCA92C2BCA4E00E4B9CC /* ActivityIndicatorProgressViewController.m in Sources */,
 				D9B8EEC32C295B2B005C8710 /* WebViewTestViewController.m in Sources */,

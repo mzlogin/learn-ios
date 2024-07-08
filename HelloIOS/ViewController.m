@@ -13,6 +13,7 @@
 #import "ViewControllers/ActivityIndicatorProgressViewController.h"
 #import "ViewControllers/ToolbarTestViewController.h"
 #import "ViewControllers/NavigationBarTestViewController.h"
+#import "ViewControllers/DatePickerTestViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *labelAndTextFieldTestButton;
@@ -22,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *activeIndicatorProgressTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *toolbarTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *navigationBarTestButton;
+@property (weak, nonatomic) IBOutlet UIButton *datePickerTestButton;
 
 @end
 
@@ -39,6 +41,7 @@
     [self addDefaultAction:self.activeIndicatorProgressTestButton];
     [self addDefaultAction:self.toolbarTestButton];
     [self addDefaultAction:self.navigationBarTestButton];
+    [self addDefaultAction:self.datePickerTestButton];
 }
 
 - (void)addDefaultAction:(UIButton*) button {
@@ -63,6 +66,8 @@
         controller = [[ToolbarTestViewController alloc] init];
     } else if ([sender isEqual:self.navigationBarTestButton]) {
         controller = [[NavigationBarTestViewController alloc] init];
+    } else if ([sender isEqual:self.datePickerTestButton]) {
+        controller = [[DatePickerTestViewController alloc] init];
     }
 
     if (controller != nil) {
