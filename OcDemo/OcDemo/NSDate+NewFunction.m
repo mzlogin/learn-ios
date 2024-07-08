@@ -9,10 +9,10 @@
 
 @implementation NSDate (NewFunction)
 
-+(NSDate*)dateFromStr:(NSString *)dateStr {
++ (NSDate*)dateFromStr:(NSString *)dateStr {
     NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-//    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
     return [dateFormatter dateFromString:dateStr];
 }
 
