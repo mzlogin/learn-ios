@@ -19,6 +19,8 @@
 		D974CCAC2C2E637E00E4B9CC /* ToolbarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D974CCAB2C2E637E00E4B9CC /* ToolbarTestViewController.m */; };
 		D974CCAF2C2E692900E4B9CC /* NavigationBarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D974CCAE2C2E692900E4B9CC /* NavigationBarTestViewController.m */; };
 		D9B471B32C3B91C200255731 /* DatePickerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B471B22C3B91C200255731 /* DatePickerTestViewController.m */; };
+		D9B471B52C3B982B00255731 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9B471B42C3B982B00255731 /* provinces_cities.plist */; };
+		D9B471B82C3B993500255731 /* PickerViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B471B72C3B993500255731 /* PickerViewTestViewController.m */; };
 		D9B8EEC02C29257F005C8710 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B8EEBF2C29257F005C8710 /* ViewController.m */; };
 		D9B8EEC22C2959E7005C8710 /* SwitchSlideSegmentedControlTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86C22C213DFA0092B7E9 /* SwitchSlideSegmentedControlTestViewController.m */; };
 		D9B8EEC32C295B2B005C8710 /* WebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C86DF2C228BDD0092B7E9 /* WebViewTestViewController.m */; };
@@ -60,6 +62,9 @@
 		D974CCAE2C2E692900E4B9CC /* NavigationBarTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarTestViewController.m; sourceTree = "<group>"; };
 		D9B471B12C3B91C200255731 /* DatePickerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerTestViewController.h; sourceTree = "<group>"; };
 		D9B471B22C3B91C200255731 /* DatePickerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerTestViewController.m; sourceTree = "<group>"; };
+		D9B471B42C3B982B00255731 /* provinces_cities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = provinces_cities.plist; sourceTree = "<group>"; };
+		D9B471B62C3B993500255731 /* PickerViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewTestViewController.h; sourceTree = "<group>"; };
+		D9B471B72C3B993500255731 /* PickerViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewTestViewController.m; sourceTree = "<group>"; };
 		D9B8EEBE2C29257F005C8710 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D9B8EEBF2C29257F005C8710 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D9C284C82AADE500000ACD04 /* XibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +133,7 @@
 				D9B8EEBE2C29257F005C8710 /* ViewController.h */,
 				D9B8EEBF2C29257F005C8710 /* ViewController.m */,
 				D93C86EF2C22AB850092B7E9 /* index.html */,
+				D9B471B42C3B982B00255731 /* provinces_cities.plist */,
 			);
 			path = HelloIOS;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				D974CCAE2C2E692900E4B9CC /* NavigationBarTestViewController.m */,
 				D9B471B12C3B91C200255731 /* DatePickerTestViewController.h */,
 				D9B471B22C3B91C200255731 /* DatePickerTestViewController.m */,
+				D9B471B62C3B993500255731 /* PickerViewTestViewController.h */,
+				D9B471B72C3B993500255731 /* PickerViewTestViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9731B672AA4293700978063 /* LaunchScreen.storyboard in Resources */,
+				D9B471B52C3B982B00255731 /* provinces_cities.plist in Resources */,
 				D9B8EEE62C295E72005C8710 /* index.html in Resources */,
 				D9731B642AA4293700978063 /* Assets.xcassets in Resources */,
 				D9731B622AA4293600978063 /* Main.storyboard in Resources */,
@@ -279,6 +288,7 @@
 				D9B8EEC22C2959E7005C8710 /* SwitchSlideSegmentedControlTestViewController.m in Sources */,
 				D9731B5F2AA4293600978063 /* LabelAndTextFieldTestViewController.m in Sources */,
 				D9731B592AA4293600978063 /* AppDelegate.m in Sources */,
+				D9B471B82C3B993500255731 /* PickerViewTestViewController.m in Sources */,
 				D9B471B32C3B91C200255731 /* DatePickerTestViewController.m in Sources */,
 				D9731B6A2AA4293700978063 /* main.m in Sources */,
 				D974CCA92C2BCA4E00E4B9CC /* ActivityIndicatorProgressViewController.m in Sources */,
