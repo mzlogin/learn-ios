@@ -16,6 +16,7 @@
 #import "ViewControllers/DatePickerTestViewController.h"
 #import "ViewControllers/PickerViewTestViewController.h"
 #import "ViewControllers/CollectionViewTestViewController.h"
+#import "ViewControllers/TableViewTestViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *labelAndTextFieldTestButton;
@@ -28,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *datePickerTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *pickerViewTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *collectionViewTestButton;
+@property (weak, nonatomic) IBOutlet UIButton *tableViewTestButton;
 
 @end
 
@@ -48,6 +50,7 @@
     [self addDefaultAction:self.datePickerTestButton];
     [self addDefaultAction:self.pickerViewTestButton];
     [self addDefaultAction:self.collectionViewTestButton];
+    [self addDefaultAction:self.tableViewTestButton];
 }
 
 - (void)addDefaultAction:(UIButton*) button {
@@ -78,6 +81,8 @@
         controller = [[PickerViewTestViewController alloc] init];
     } else if ([sender isEqual:self.collectionViewTestButton]) {
         controller = [[CollectionViewTestViewController alloc] init];
+    } else if ([sender isEqual:self.tableViewTestButton]) {
+        controller = [[TableViewTestViewController alloc] init];
     }
 
     if (controller != nil) {
