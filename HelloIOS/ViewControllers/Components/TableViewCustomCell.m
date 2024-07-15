@@ -34,7 +34,7 @@
         
         [self addSubview:self.myImageView];
         
-        CGFloat labelWidth = 120;
+        CGFloat labelWidth = 200;
         CGFloat labelHeight = 21;
         CGFloat labelLeftView = 15;
         

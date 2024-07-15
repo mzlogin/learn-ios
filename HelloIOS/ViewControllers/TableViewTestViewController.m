@@ -10,10 +10,17 @@
 
 #define CellIdentifier @"CellIdentifier"
 
-@interface TableViewTestViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface TableViewTestViewController ()<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchResultsUpdating>
 
 @property (nonatomic, strong) NSArray *listTeams;
+
+@property (nonatomic, strong) NSMutableArray *listFilteredTeams;
+
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) UISearchController *searchController;
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSUInteger)scope;
 
 @end
 
@@ -24,6 +31,7 @@
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"team" ofType:@"plist"];
     self.listTeams = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    [self filterContentForSearchText:@"" scope:-1];
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     
@@ -31,11 +39,50 @@
     self.tableView.dataSource = self;
     
     [self.view addSubview:self.tableView];
+    
+    // UISearchController
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = self;
+    self.searchController.dimsBackgroundDuringPresentation = FALSE;
+    
+    self.searchController.searchBar.scopeButtonTitles = @[@"中文", @"英文"];
+    self.searchController.searchBar.delegate = self;
+    
+    [self.tableView setTableHeaderView:self.searchController.searchBar];
+    [self.searchController.searchBar sizeToFit];
+}
+
+- (void)filterContentForSearchText:(NSString *)searchText scope:(NSUInteger)scope {
+    if ([searchText length] == 0) {
+        self.listFilteredTeams = [NSMutableArray arrayWithArray:self.listTeams];
+        return;
+    }
+    
+    NSPredicate *scopePredicate;
+    NSArray *tempArray;
+    
+    switch (scope) {
+        case 0:
+            scopePredicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@", searchText];
+            tempArray = [self.listTeams filteredArrayUsingPredicate:scopePredicate];
+            self.listFilteredTeams = [NSMutableArray arrayWithArray:tempArray];
+            break;
+            
+        case 1:
+            scopePredicate = [NSPredicate predicateWithFormat:@"SELF.image contains[c] %@", searchText];
+            tempArray = [self.listTeams filteredArrayUsingPredicate:scopePredicate];
+            self.listFilteredTeams = [NSMutableArray arrayWithArray:tempArray];
+            break;
+            
+        default:
+            self.listFilteredTeams = [NSMutableArray arrayWithArray:self.listTeams];
+            break;
+    }
 }
 
 #pragma mark - UITableViewDataSource 协议方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.listTeams count];
+    return [self.listFilteredTeams count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,10 +108,11 @@
     
     NSUInteger row = [indexPath row];
     
-    NSDictionary *rowDict = self.listTeams[row];
-    cell.myLabel.text = rowDict[@"name"];
-    
+    NSDictionary *rowDict = self.listFilteredTeams[row];
     NSString *imageFile = rowDict[@"image"];
+    
+    cell.myLabel.text = [[NSString alloc] initWithFormat:@"%@ %@", rowDict[@"name"], imageFile];
+    
     NSString *imagePath = [[NSString alloc] initWithFormat:@"%@.png", imageFile];
     
     cell.myImageView.image = [UIImage imageNamed:imagePath];
@@ -72,6 +120,18 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
+}
+
+#pragma mark - UISearchBarDelegate
+- (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
+    [self updateSearchResultsForSearchController:self.searchController];
+}
+
+#pragma mark - UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    NSString *searchString = searchController.searchBar.text;
+    [self filterContentForSearchText:searchString scope:searchController.searchBar.selectedScopeButtonIndex];
+    [self.tableView reloadData];
 }
 
 /*
