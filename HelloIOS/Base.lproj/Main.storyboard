@@ -83,6 +83,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TableView Test"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BL-bo-oqz">
+                                <rect key="frame" x="93" y="685" width="208" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TableView Sections Test"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SC6-c5-0jb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -97,6 +103,7 @@
                         <outlet property="navigationBarTestButton" destination="W3j-od-JUi" id="UgH-Ed-uK5"/>
                         <outlet property="pickerViewTestButton" destination="g3h-PN-h9W" id="UuW-6w-2iD"/>
                         <outlet property="switchSlideSegmentedControlTestButton" destination="Sx2-lL-ltH" id="jub-ly-ukl"/>
+                        <outlet property="tableViewSectionsTestButton" destination="9BL-bo-oqz" id="rMf-UO-ZVV"/>
                         <outlet property="tableViewTestButton" destination="xbD-cN-anO" id="MmD-8v-9vS"/>
                         <outlet property="toolbarTestButton" destination="Fhd-LX-VYo" id="aRr-qc-5rp"/>
                         <outlet property="webViewTestButton" destination="pWq-yS-OEN" id="Ypd-Z6-UAn"/>

@@ -78,6 +78,8 @@
 		D9C284DD2AADE501000ACD04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C284DC2AADE501000ACD04 /* main.m */; };
 		D9C284E92AADE66B000ACD04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C284E72AADE66B000ACD04 /* ViewController.m */; };
 		D9C284EA2AADE66B000ACD04 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C284E82AADE66B000ACD04 /* RootViewController.xib */; };
+		D9D86CE22C4DF84C009EEA2C /* team_dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9D86CE12C4DF84C009EEA2C /* team_dictionary.plist */; };
+		D9D86CE52C4DF895009EEA2C /* TableViewSectionsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D86CE42C4DF895009EEA2C /* TableViewSectionsTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +177,9 @@
 		D9C284E62AADE66B000ACD04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D9C284E72AADE66B000ACD04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D9C284E82AADE66B000ACD04 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		D9D86CE12C4DF84C009EEA2C /* team_dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team_dictionary.plist; sourceTree = "<group>"; };
+		D9D86CE32C4DF895009EEA2C /* TableViewSectionsTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSectionsTestViewController.h; sourceTree = "<group>"; };
+		D9D86CE42C4DF895009EEA2C /* TableViewSectionsTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSectionsTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +223,7 @@
 			children = (
 				D9A65E6D2C44C36700B36D2B /* 球队图片 */,
 				D9A65E6E2C44C36700B36D2B /* team.plist */,
+				D9D86CE12C4DF84C009EEA2C /* team_dictionary.plist */,
 				D9A65E3F2C3CEF5F00B36D2B /* Olympics_Pic */,
 				D9B8EEC12C29270B005C8710 /* ViewControllers */,
 				D9731B572AA4293600978063 /* AppDelegate.h */,
@@ -329,6 +335,8 @@
 				D9A65DE62C3CE80F00B36D2B /* CollectionViewTestViewController.m */,
 				D9A65E4A2C44C0A300B36D2B /* TableViewTestViewController.h */,
 				D9A65E4B2C44C0A300B36D2B /* TableViewTestViewController.m */,
+				D9D86CE32C4DF895009EEA2C /* TableViewSectionsTestViewController.h */,
+				D9D86CE42C4DF895009EEA2C /* TableViewSectionsTestViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -472,6 +480,7 @@
 				D9A65E752C44C36700B36D2B /* CoteDIvoire.png in Resources */,
 				D9A65E722C44C36700B36D2B /* Brazil.png in Resources */,
 				D9A65E712C44C36700B36D2B /* Australia.png in Resources */,
+				D9D86CE22C4DF84C009EEA2C /* team_dictionary.plist in Resources */,
 				D9A65E842C44C36700B36D2B /* Paraguay.png in Resources */,
 				D9A65E7F2C44C36700B36D2B /* Japan.png in Resources */,
 				D9A65E8D2C44C36700B36D2B /* Uruguay.png in Resources */,
@@ -510,6 +519,7 @@
 				D9A65E922C44C8AC00B36D2B /* TableViewCustomCell.m in Sources */,
 				D9A65DE72C3CE80F00B36D2B /* CollectionViewTestViewController.m in Sources */,
 				D974CCA62C2BAF8B00E4B9CC /* AlertActionSheetTestViewController.m in Sources */,
+				D9D86CE52C4DF895009EEA2C /* TableViewSectionsTestViewController.m in Sources */,
 				D9731B5C2AA4293600978063 /* SceneDelegate.m in Sources */,
 				D974CCAF2C2E692900E4B9CC /* NavigationBarTestViewController.m in Sources */,
 				D9B8EEC02C29257F005C8710 /* ViewController.m in Sources */,

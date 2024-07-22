@@ -17,6 +17,7 @@
 #import "ViewControllers/PickerViewTestViewController.h"
 #import "ViewControllers/CollectionViewTestViewController.h"
 #import "ViewControllers/TableViewTestViewController.h"
+#import "ViewControllers/TableViewSectionsTestViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *labelAndTextFieldTestButton;
@@ -30,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pickerViewTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *collectionViewTestButton;
 @property (weak, nonatomic) IBOutlet UIButton *tableViewTestButton;
+@property (weak, nonatomic) IBOutlet UIButton *tableViewSectionsTestButton;
 
 @end
 
@@ -51,6 +53,7 @@
     [self addDefaultAction:self.pickerViewTestButton];
     [self addDefaultAction:self.collectionViewTestButton];
     [self addDefaultAction:self.tableViewTestButton];
+    [self addDefaultAction:self.tableViewSectionsTestButton];
 }
 
 - (void)addDefaultAction:(UIButton*) button {
@@ -83,6 +86,8 @@
         controller = [[CollectionViewTestViewController alloc] init];
     } else if ([sender isEqual:self.tableViewTestButton]) {
         controller = [[TableViewTestViewController alloc] init];
+    } else if ([sender isEqual:self.tableViewSectionsTestButton]) {
+        controller = [[TableViewSectionsTestViewController alloc] init];
     }
 
     if (controller != nil) {
